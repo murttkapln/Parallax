@@ -1,0 +1,193 @@
+/* * {
+  border: 1px solid black;
+} */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 1.8rem;
+  color: #666;
+  height: 100%;
+}
+section.img1 {
+  background-image: url(./images/bg.jpg);
+  min-height: 100%;
+}
+section.background-image {
+  background-attachment: fixed; /**background özellikleri icin https://www.w3schools.com/css/css_background.asp*/
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+
+  /* ?section div'inin altindaki article div ini sagdan soldan ve yukaridan asagidan ortalamak icin */
+  /* *1.yol */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.7;
+}
+
+/* *2.yol */
+/* section{
+height: 100vh; üst div e yükseklik vermek sarti ile
+}
+article{
+width: 200px;
+height: 200px;
+position: absolute;
+top: 50vh;
+left: 50%;
+margin-top: -100px;
+margin-left: -100px;
+} */
+
+/* *3.yol */
+/* section{
+height: 100vh;
+}
+article{
+width: 200px;
+height: 200px;
+margin: auto;
+margin-top: calc(sayh - 100px);
+} */
+
+article.content {
+  background-color: black;
+  color: white;
+  border: solid black 2px;
+  outline-offset: 1rem;
+  outline: inset 0.5rem purple; /**outline ve outline ofset icin bakiniz https://www.w3schools.com/css/css_outline.asp*/
+  border-radius: 20px 0;
+  padding: 2rem;
+}
+
+article.content h1 {
+  font-weight: 400;
+  font-size: 3rem;
+  letter-spacing: 0.5rem;
+}
+
+section.text {
+  text-align: justify;
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+  padding: 3rem 5rem;
+  color: #ddd;
+}
+section.text h2 {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+section.text p {
+  text-indent: 1rem;
+}
+section.text-light1 {
+  background-color: rgb(241, 241, 241);
+  color: #666;
+}
+section.img2 {
+  background-image: url(./images/bg2.jpg);
+  min-height: 80%;
+}
+article.logo {
+  text-align: center;
+}
+section.text-dark1 {
+  background-color: #282e34;
+  color: #ddd;
+}
+section.img3 {
+  background-image: url(./images/bg3.jpg);
+  min-height: 80%;
+}
+section.text-light2 {
+  background-color: rgb(241, 241, 241);
+  color: #666;
+}
+
+section.img4 {
+  background-image: url(./images/bg4.jpg);
+  min-height: 80%;
+}
+section.text-dark2 {
+  background-color: #282e34;
+  color: #ddd;
+}
+
+section.img5 {
+  background-image: url(./images/bg.jpg);
+}
+@media (max-width: 760px) {
+  article.content {
+    font-size: 2rem; /*width: fit-content;*/
+  }
+  article.big {
+    padding: 1rem;
+    border-top-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    outline: 0.4rem inset purple;
+    outline-offset: 0.6rem;
+    line-height: 2.5rem;
+  }
+  article.small {
+    padding: 0.4rem;
+    border-top-left-radius: 0.3rem;
+    border-bottom-right-radius: 0.3rem;
+    outline: 0.2rem inset purple;
+    outline-offset: 0.1rem;
+    line-height: 2.4rem;
+  }
+  .section {
+    font-size: 0.9rem;
+  }
+}
+/**responsive daha fazlabilgi icin https://www.w3schools.com/html/html_responsive.asp*/
+@media (max-width: 568px) {
+  section.img1,
+  section.img2,
+  section.img3,
+  section.img4 {
+    background-attachment:scroll;
+  }
+}
+
+/*? Background İmage */
+/** Arka plana resim vermemiz sağlar. Resmin url adresini ekleriz. Eklediğimiz resim ekranı kaplayacak şekilde yatay ve dikey olarak tekrarlanır. */
+/* #div1 {
+  background-image: url();
+  background-size: 50px;
+  padding: 250px;
+} */
+/** Eğer resim sadece yatay olarak tekrarlanmasını istiyorsak alttaki kodu yazmalıyız. */
+/* #div1 {
+  background-repeat: repeat-x;
+} */
+/** Eğer resim sadece dikey olarak tekrarlanmasını istiyorsak alttaki kodu yazmalıyız. CSS içerisinde hem repeat -x, hem de repeat -y yazarsak ise vscode en son yazdığımızı çalıştırır. Çünkü yukarıdan aşağıya sırayla çalıştırır.*/
+/* #div1 {
+  background-repeat: repeat-y;
+} */
+/** Eğer arka plan resminin tekrar etmesini istemiyorsak no-repeat yazmamız gerekir. */
+/* #div1 {
+  background-repeat: no-repeat;
+} */
+/** Arka plandaki resmin konumunu css ile ayarlayabiliriz. */
+/* #h6 {
+  background-position: right top;
+} */
+/*? Background Attachment (Arka Plan Eki) */
+/** Arka plan resminin kaydırılması veya sabitlenmesi için kullanılır. Fixed sabitler, scrool sayfayla birlikte kaydırılmasını sağlar, */
+/* #div1 {
+  background-attachment: fixed; /* Sabit */
+/* background-attachment: scroll; /* Hareketli */
+/* } */
