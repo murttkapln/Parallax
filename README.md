@@ -3,7 +3,7 @@
 
 # Project-002 : Parallax Website (HC-02)
 
-(visit)[https://murttkapln.github.io/Parallax/]
+[visit](https://murttkapln.github.io/Parallax/)
 
 ## Description
 Project aims to create parallax website.
