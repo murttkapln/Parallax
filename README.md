@@ -81,5 +81,5 @@ Build a Landing that is functionally similar to this: [Parallax Website](https:/
 -  [Images](./img)
 
 
-<p align="center"> <strong>⌛ Happy Coding  ✍ </strong> </p>
+
 
