@@ -14,8 +14,8 @@ Project aims to create parallax website.
 ```
 003-parallax-website (folder)
 |
-|----readme.md         # Given to the students (Definition of the project)          
-|----images            # Given to the students (Images of the project)   
+|----readme.md               
+|----images            
 |----solution
         |----index.html  
         |----style.css   
