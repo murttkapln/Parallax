@@ -1,7 +1,6 @@
-<p>Clarusway<img align="right"
-  src="https://secure.meetupstatic.com/photos/event/3/1/b/9/600_488352729.jpeg"  width="15px"></p>
 
-# Project-002 : Parallax Website (HC-02)
+
+Parallax Website 
 
 ## Description
 Project aims to create parallax website.
@@ -29,7 +28,7 @@ Project aims to create parallax website.
 
 ## Objective
 
-Build a Landing that is functionally similar to this: [Parallax Website](https://murttkapln.github.io/Parallax/)
+[Parallax Website](https://murttkapln.github.io/Parallax/)
 
 ### At the end of the project, following topics are to be covered;
 
@@ -78,7 +77,7 @@ Build a Landing that is functionally similar to this: [Parallax Website](https:/
 
 ## Resources
 
--  [Images](./img)
+-  [Images](https://github.com/murttkapln/Parallax/tree/master/images)
 
 
 
